@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/todolist
+    username: root
+    password: test1234
+    driverClassName: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+        show_sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      generate-ddl: true
+      properties:
+      temp:
+        use_jdbc_metadata_defaults: false
